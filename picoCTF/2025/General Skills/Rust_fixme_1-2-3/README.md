@@ -87,6 +87,7 @@ fn main() {
 }
 ```
 The errors here are simply there to teach us how to modify a value through a reference as variables in Rust are immutable by default. adding `mut` before data types to declare that they are `mutable` is the solution here. Again after fixing just recompile and run the code.
+
 ![flag2](./imgs/flag2.png)
 
 ## fixme 3
@@ -147,4 +148,5 @@ let decrypted_buffer = xrc.decrypt_vec(encrypted_buffer);
 borrowed_string.push_str(&String::from_utf8_lossy(&decrypted_buffer));
 ```
 Finally, we get the flag
+
 ![flag3](./imgs/flag3.png)
